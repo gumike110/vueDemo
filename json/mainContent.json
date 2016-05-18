@@ -1,0 +1,36 @@
+{
+  "welcome": "欢迎使用",
+  "project": "内容管理平台",
+  "version": "v1.1.2",
+  "desc": ",轻量级好用的后台管理系统模版.\t",
+  "items": [
+    {
+      "color": "green",
+      "type": "icon",
+      "icon": "comments",
+      "number": 32,
+      "info": "2个评论",
+      "css": "stat stat-success",
+      "changeInfo": "8%"
+    },
+    {
+      "color": "blue",
+      "type": "icon",
+      "icon": "twitter",
+      "number": 11,
+      "info": "新粉丝",
+      "css": "badge badge-success",
+      "changeInfo": "+32%",
+      "hasArrow": true
+    },
+    {
+      "color": "pink",
+      "type": "icon",
+      "icon": "shopping-cart",
+      "number": 8,
+      "info": "新订单",
+      "css": "stat stat-important",
+      "changeInfo": "4%"
+    }
+  ]
+}

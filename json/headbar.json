@@ -1,0 +1,252 @@
+{
+  "items": [
+    {
+      "menuText": "资源管理",
+      "items": [
+        {
+          "isleaf": false,
+          "icon": "icon-dashboard",
+          "menuText": "控制台",
+          "url": "mainContent.html"
+        },
+        {
+          "isleaf": false,
+          "icon": "icon-text-width",
+          "menuText": "文字排版",
+          "url": "typography.html"
+        },
+        {
+          "isleaf": true,
+          "icon": "icon-desktop",
+          "menuText": "UI 组件",
+          "url": "#",
+          "list": [
+            {
+              "url": "elements.html",
+              "menuText": "组件"
+            },
+            {
+              "url": "buttons.html",
+              "menuText": "按钮 & 图表"
+            },
+            {
+              "url": "treeview.html",
+              "menuText": "树菜单"
+            },
+            {
+              "url": "jquery-ui.html",
+              "menuText": "jQuery UI"
+            },
+            {
+              "url": "nestable-list.html",
+              "menuText": "可拖拽列表"
+            },
+            {
+              "url": "#",
+              "menuText": "三级菜单",
+              "isleaf": true,
+              "list": [
+                {
+                  "url": "#",
+                  "menuText": "第一级",
+                  "icon": "icon-leaf"
+                },
+                {
+                  "url": "#",
+                  "menuText": "第四级",
+                  "icon": "icon-pencil"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuText": "运营管理",
+      "items": [
+        {
+          "isleaf": false,
+          "icon": "icon-dashboard",
+          "menuText": "控制台2",
+          "url": "mainContent.html"
+        },
+        {
+          "isleaf": false,
+          "icon": "icon-text-width",
+          "menuText": "文字排版2",
+          "url": "typography.html"
+        },
+        {
+          "isleaf": true,
+          "icon": "icon-desktop",
+          "menuText": "UI 组件2",
+          "url": "#",
+          "list": [
+            {
+              "url": "elements.html",
+              "menuText": "组件2"
+            },
+            {
+              "url": "buttons.html",
+              "menuText": "按钮 & 图表2"
+            },
+            {
+              "url": "treeview.html",
+              "menuText": "树菜单2"
+            },
+            {
+              "url": "jquery-ui.html",
+              "menuText": "jQuery UI2"
+            },
+            {
+              "url": "nestable-list.html",
+              "menuText": "可拖拽列表2"
+            },
+            {
+              "url": "#",
+              "menuText": "三级菜单2",
+              "isleaf": true,
+              "list": [
+                {
+                  "url": "#",
+                  "menuText": "第一级2",
+                  "icon": "icon-leaf"
+                },
+                {
+                  "url": "#",
+                  "menuText": "第四级2",
+                  "icon": "icon-pencil"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuText": "数据管理",
+      "items": [
+        {
+          "isleaf": false,
+          "icon": "icon-dashboard",
+          "menuText": "控制台3",
+          "url": "mainContent.html"
+        },
+        {
+          "isleaf": false,
+          "icon": "icon-text-width",
+          "menuText": "文字排版3",
+          "url": "typography.html"
+        },
+        {
+          "isleaf": true,
+          "icon": "icon-desktop",
+          "menuText": "UI 组件3",
+          "url": "#",
+          "list": [
+            {
+              "url": "elements.html",
+              "menuText": "组件3"
+            },
+            {
+              "url": "buttons.html",
+              "menuText": "按钮 & 图表3"
+            },
+            {
+              "url": "treeview.html",
+              "menuText": "树菜单3"
+            },
+            {
+              "url": "jquery-ui.html",
+              "menuText": "jQuery UI3"
+            },
+            {
+              "url": "nestable-list.html",
+              "menuText": "可拖拽列表3"
+            },
+            {
+              "url": "#",
+              "menuText": "三级菜单3",
+              "isleaf": true,
+              "list": [
+                {
+                  "url": "#",
+                  "menuText": "第一级3",
+                  "icon": "icon-leaf"
+                },
+                {
+                  "url": "#",
+                  "menuText": "第四级3",
+                  "icon": "icon-pencil"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuText": "配置管理",
+      "items": [
+        {
+          "isleaf": false,
+          "icon": "icon-dashboard",
+          "menuText": "控制台4",
+          "url": "mainContent.html"
+        },
+        {
+          "isleaf": false,
+          "icon": "icon-text-width",
+          "menuText": "文字排版4",
+          "url": "typography.html"
+        },
+        {
+          "isleaf": true,
+          "icon": "icon-desktop",
+          "menuText": "UI 组件4",
+          "url": "#",
+          "list": [
+            {
+              "url": "elements.html",
+              "menuText": "组件4"
+            },
+            {
+              "url": "buttons.html",
+              "menuText": "按钮 & 图表4"
+            },
+            {
+              "url": "treeview.html",
+              "menuText": "树菜单4"
+            },
+            {
+              "url": "jquery-ui.html",
+              "menuText": "jQuery UI4"
+            },
+            {
+              "url": "nestable-list.html",
+              "menuText": "可拖拽列表4"
+            },
+            {
+              "url": "#",
+              "menuText": "三级菜单4",
+              "isleaf": true,
+              "list": [
+                {
+                  "url": "#",
+                  "menuText": "第一级4",
+                  "icon": "icon-leaf"
+                },
+                {
+                  "url": "#",
+                  "menuText": "第四级4",
+                  "icon": "icon-pencil"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

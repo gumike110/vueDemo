@@ -1,0 +1,64 @@
+<script src="js/app/mainContent.js"></script>
+<div class="breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <i class="icon-home home-icon"></i>
+            <a href="#">首页</a>
+        </li>
+        <li class="active">控制台</li>
+    </ul>
+    <div class="nav-search">
+        <form class="form-search">
+            <span class="input-icon">
+                <input placeholder="查询..." class="nav-search-input" autocomplete="off">
+                <i class="icon-search nav-search-icon"></i>
+            </span>
+        </form>
+    </div>
+</div>
+<div class="page-content" id="page">
+    <div class="page-header">
+        <h1>控制台
+            <small>
+                <i class="icon-double-angle-right"></i>
+                首页
+            </small>
+        </h1>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="alert alert-block alert-success">
+                <button type="button" class="close" data-dismiss="alert">
+                    <i class="icon-remove"></i>
+                </button>
+                <i class="icon-ok-green"></i>
+                {{welcome}}
+                <strong class="green">{{project}}
+                    <small>({{version}})</small>
+                </strong>
+                {{desc}}
+            </div>
+            <div class="row">
+                <div class="space-6">
+                </div>
+                <div class="col-sm-7 infobox-container">
+                    <div v-for="item in items" class="infobox infobox-{{item.color}}">
+                        <div class="infobox-{{item.type}}">
+                            <i v-if="item.type == 'icon'" class="icon-{{item.icon}}"></i>
+                        </div>
+                        <div class="infobox-data">
+                            <span class="infobox-data-number">{{item.number}}</span>
+                            <div class="infobox-content">{{item.info}}</div>
+                        </div>
+                        <div class="{{item.css}}">{{item.changeInfo}}
+                            <i v-if="item.hasArrow" class="icon-arrow-up"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="vspace-sm"></div>
+                <div class="col-sm-5"></div>
+            </div>
+        </div>
+    </div>
+</div>

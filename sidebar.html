@@ -1,0 +1,36 @@
+<script src="js/app/sidebar.js"></script>
+<ul class="nav nav-list" id="sidebar">
+    <li v-for="item in items">
+        <a v-if="item.isleaf" href="{{item.url}}" class="dropdown-toggle">
+            <i class="{{item.icon}}"></i>
+            <span class="menu-text">{{item.menuText}}</span>
+            <b class="arrow icon-angle-down"></b>
+        </a>
+        <ul v-if="item.isleaf" class="submenu">
+            <li v-for="child in item.list">
+                <a v-if="child.isleaf" href="{{child.url}}" class="dropdown-toggle">
+                    <i class="icon-double-angle-right"></i>
+                    {{child.menuText}}
+                    <b class="arrow icon-angle-down"></b>
+                </a>
+                <ul v-if="child.isleaf" class="submenu">
+                    <li v-for="child1 in child.list">
+                        <a href="{{child1.url}}">
+                            <i class="{{child1.icon}}"></i>
+                            {{child1.menuText}}
+                        </a>
+                    </li>
+                </ul>
+                <a v-else href="javascript:loadMenu('{{child.url}}')">
+                    <i class="icon-double-angle-right"></i>
+                    {{child.menuText}}
+                </a>
+            </li>
+        </ul>
+        <a v-else href="javascript:loadMenu('{{item.url}}')">
+            <i class="{{item.icon}}"></i>
+            <span class="menu-text">{{item.menuText}}</span>
+        </a>
+
+    </li>
+</ul>

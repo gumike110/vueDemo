@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>内容管理平台</title>
+    <script src="js/vue.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ace.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ace.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
+                        <i class="icon-desktop">
+                            内容管理平台
+                        </i>
+                    </small>
+                </a>
+            </div>
+            <div class="navbar-header pull-left">
+                <select class="mainSelect">
+                    <option value="1" selected="selected">资讯</option>
+                    <option value="2">锁频</option>
+                    <option value="3">应用</option>
+                    <option value="4">游戏</option>
+                    <option value="5">阅读</option>
+                    <option value="6">音频</option>
+                </select>
+            </div>
+            <div class="navbar-header pull-left" role="navigation" id="headbar">
+                <ul class="nav ace-nav">
+                    <li v-for="item in items" class="grey">
+                        <a href="javascript:getLeft({{$index}});">
+                            <i class="icon-tasks"></i>
+                            <span>{{item.menuText}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-header pull-right" role="navigation">
+                <ul class="nav ace-nav">
+                    <li class="light-grey">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <img class="nav-user-photo" src="img/user.jpg">
+                            <span class="user-info">
+                                <small>欢迎光临,</small>
+                                MR.Gu
+                            </span>
+                            <i class="icon-caret-down"></i>
+                        </a>
+                        <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i>
+                                    个人资料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-pencil"></i>
+                                    修改密码
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-credit-card"></i>
+                                    账号管理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-cog"></i>
+                                    角色管理
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-off"></i>
+                                    退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container" id="mainContainer">
+        <div class="main-container-inner">
+            <div class="sidebar" id="sidebarPage">
+            </div>
+            <div class="main-content" id="mainContent">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/app/index.js"></script>
+</html>
